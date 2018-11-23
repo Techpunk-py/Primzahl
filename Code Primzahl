@@ -1,0 +1,43 @@
+# Primzahlen Generator 
+
+
+anfang = input('Hallo lass uns beginnen!')
+grenze = input('Geben Sie die Höchstgrenze ein!')
+grenze = int(grenze)
+
+i = 2
+
+while (i <= grenze):
+    primzahl = True
+    y = 2
+    while (y < i):
+        rest = i % y
+        if rest == 0:
+            primzahl = False
+            break
+        if (y / 2 > i):
+            break
+        y = y + 1
+    if (primzahl == True):
+       print(i)
+
+    i = i + 1
+
+anfang = input('Hallo lass uns beginnen!')
+i = 2
+
+while (i <= 9999999999999999999):
+    primzahl = True
+    y = 2
+    while (y < i):
+        rest = i % y
+        if rest == 0:
+            primzahl = False
+            break
+        if (y / 2 > i):
+            break
+        y = y + 1
+    if (primzahl == True):
+       print(i)
+
+    i = i + 1
